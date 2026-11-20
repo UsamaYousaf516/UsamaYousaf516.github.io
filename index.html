@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arrow Escape: a calm logic puzzle</title>
+<meta name="description" content="Arrow Escape is a calm logic puzzle: slide each arrow off the board, but only when its path is clear. 300 levels, a daily challenge, monthly trophies and soft Zen Garden boards.">
+<meta name="theme-color" content="#EEF1EC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141A17" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Arrow Escape: a calm logic puzzle">
+<meta property="og:description" content="Slide every arrow off the board in the right order. 300 levels, a daily challenge and calm Zen Garden boards.">
+<meta property="og:image" content="https://usamayousaf516.github.io/assets/img/og-image.png">
+<meta property="og:url" content="https://usamayousaf516.github.io/">
+<link rel="canonical" href="https://usamayousaf516.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/img/icon-192.png" alt="" width="36" height="36">Arrow Escape</a>
+    <nav class="nav" aria-label="Main">
+      <a class="hide-sm" href="#how">How to play</a>
+      <a class="hide-sm" href="#features">Features</a>
+      <a class="hide-sm" href="#faq">FAQ</a>
+      <a class="btn small" href="https://play.google.com/store/apps/details?id=com.yaro.arrowescape">Get the app</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">A calm logic puzzle</p>
+        <h1>Breathe.<br>Look.<br>Release.</h1>
+        <p class="lead">Slide each arrow off the board in the direction it points, but only when nothing stands in its way. One simple rule, 300 boards to master, and a fresh puzzle every day.</p>
+        <div class="cta">
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.yaro.arrowescape">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.6 2.3 14 12l-9.4 9.7c-.4-.2-.6-.6-.6-1.1V3.4c0-.5.2-.9.6-1.1Zm10.8 11.1 2.5 2.5-11 6.3 8.5-8.8Zm3.8-3.4 2.6 1.5c.8.5.8 1.6 0 2.1L19.2 15l-2.8-2.9 2.8-2.1ZM6.9 1.8l11 6.3-2.5 2.5-8.5-8.8Z"/></svg>
+            Get it on Google Play
+          </a>
+          <a class="btn ghost" href="#demo">Try a board</a>
+        </div>
+        <p class="note">Free to play. Works offline. No account needed.</p>
+      </div>
+
+      <div class="phone" id="demo" aria-label="Playable demo board">
+        <div class="demo-top">
+          <div class="hearts" aria-label="Hearts">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="var(--danger)" d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.7 4.5c2.1 0 3.6 1.2 4.3 2.4.7-1.2 2.2-2.4 4.3-2.4 3.7 0 5.8 3.9 4.3 7.3C19.5 16.4 12 21 12 21Z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="var(--danger)" d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.7 4.5c2.1 0 3.6 1.2 4.3 2.4.7-1.2 2.2-2.4 4.3-2.4 3.7 0 5.8 3.9 4.3 7.3C19.5 16.4 12 21 12 21Z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="var(--danger)" d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.7 4.5c2.1 0 3.6 1.2 4.3 2.4.7-1.2 2.2-2.4 4.3-2.4 3.7 0 5.8 3.9 4.3 7.3C19.5 16.4 12 21 12 21Z"/></svg>
+          </div>
+          <button class="btn ghost small" type="button" data-restart>Restart</button>
+        </div>
+        <p class="demo-title">Level 4</p>
+        <p class="demo-left" data-left aria-live="polite">17 arrows left</p>
+        <div class="bar"><span></span></div>
+        <div class="garden">
+          <svg role="group" aria-label="Board"></svg>
+          <div class="overlay" role="status">
+            <strong></strong>
+            <p></p>
+            <div class="demo-controls">
+              <button class="btn small" type="button" data-restart>Play again</button>
+              <a class="btn ghost small" href="https://play.google.com/store/apps/details?id=com.yaro.arrowescape">Get the app</a>
+            </div>
+          </div>
+        </div>
+        <p class="demo-msg" aria-live="polite"></p>
+        <div class="demo-controls">
+          <button class="btn small" type="button" data-hint>Show a hint</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="wrap">
+      <h2 class="section-title">How to play</h2>
+      <p class="section-lead">No timers and no rush. Every board can be solved; the trick is finding the order.</p>
+      <div class="steps">
+        <div class="step">
+          <svg viewBox="0 0 200 120" aria-hidden="true">
+            <g class="arrow"><path class="shadow-body" d="M40 69 H140" stroke-width="10"/><path class="body" d="M40 64 H140" stroke-width="10"/><polygon class="head" points="157,64 138,52 138,76"/></g>
+            <circle cx="90" cy="64" r="16" fill="none" stroke="var(--accent)" stroke-width="3" opacity="0.6"/>
+          </svg>
+          <h3>1. Tap an arrow</h3>
+          <p>It slides straight out of the board in the direction it points.</p>
+        </div>
+        <div class="step">
+          <svg viewBox="0 0 200 120" aria-hidden="true">
+            <g class="arrow blocked"><path class="body" d="M30 60 H100" stroke-width="10"/><polygon class="head" points="117,60 98,48 98,72"/></g>
+            <g class="arrow"><path class="body" d="M150 20 V100" stroke-width="10"/><polygon class="head" points="150,3 138,22 162,22"/></g>
+            <circle cx="150" cy="60" r="17" fill="none" stroke="var(--danger)" stroke-width="3"/>
+          </svg>
+          <h3>2. Keep the path clear</h3>
+          <p>If another arrow is in the way, the tap is blocked and costs one of your 3 hearts.</p>
+        </div>
+        <div class="step">
+          <svg viewBox="0 0 200 120" aria-hidden="true">
+            <g fill="var(--dot)"><circle cx="40" cy="30" r="4"/><circle cx="80" cy="30" r="4"/><circle cx="120" cy="30" r="4"/><circle cx="160" cy="30" r="4"/><circle cx="40" cy="60" r="4"/><circle cx="80" cy="60" r="4"/><circle cx="120" cy="60" r="4"/><circle cx="160" cy="60" r="4"/><circle cx="40" cy="90" r="4"/><circle cx="80" cy="90" r="4"/><circle cx="120" cy="90" r="4"/><circle cx="160" cy="90" r="4"/></g>
+            <g fill="var(--gold)"><path d="M100 44l4.7 9.6 10.6 1.5-7.7 7.5 1.8 10.5-9.4-5-9.4 5 1.8-10.5-7.7-7.5 10.6-1.5Z"/></g>
+          </svg>
+          <h3>3. Clear the board</h3>
+          <p>Release every arrow to finish the level and earn up to 3 stars.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="wrap">
+      <h2 class="section-title">A quiet garden full of puzzles</h2>
+      <p class="section-lead">Easy to learn, hard to put down, and gentle on the eyes.</p>
+      <div class="cards">
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></div>
+          <h3>300 levels</h3>
+          <p>From small gardens to huge interlocking boards, with straight arrows, bent snakes and long chains. Stuck? A hint shows a safe move.</p>
+        </div>
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div>
+          <h3>Daily Challenge</h3>
+          <p>A new puzzle every day. Solve every day of the month to win its trophy.</p>
+        </div>
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9 2h6"/></svg></div>
+          <h3>Four more modes</h3>
+          <p>Zen for endless calm boards, Time Attack against the clock, One Heart with no room for mistakes, and a Daily Speed Run.</p>
+        </div>
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9Z"/></svg></div>
+          <h3>Stars, coins and streaks</h3>
+          <p>Earn stars for clean solves, coins for every win, chests every 10 levels and daily streak bonuses.</p>
+        </div>
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9c0-1.1-.9-1.5-1.7-1.2-.8.3-1.8.2-2.4-.4a2 2 0 0 1 0-2.8c.6-.6.7-1.6.4-2.4C17 4.6 15.3 3 12 3Z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10" cy="7" r="1"/><circle cx="14.5" cy="7" r="1"/></svg></div>
+          <h3>Themes and dark mode</h3>
+          <p>Raked sand and smooth stone, in light or dark. Unlock Ocean, Forest, Sunset, Candy and Gold boards.</p>
+        </div>
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="4.5" r="1.5"/><path d="M5 8l7 1.5L19 8M12 9.5V14m0 0-3 6m3-6 3 6"/></svg></div>
+          <h3>Made for everyone</h3>
+          <p>Colour-blind friendly colours, bold arrows, a left-handed layout, screen reader and large text support. Plays offline.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="screens">
+    <div class="wrap">
+      <h2 class="section-title">A look inside</h2>
+      <p class="section-lead">Calm screens, clear boards, and nothing in the way of the puzzle.</p>
+      <div class="shots">
+        <figure><img src="assets/img/shots/game.webp" alt="A level 42 board full of stone arrows on raked sand" width="432" height="936" loading="lazy"><figcaption>Interlocking boards</figcaption></figure>
+        <figure><img src="assets/img/shots/hint.webp" alt="A hint highlights one arrow in sage green" width="432" height="936" loading="lazy"><figcaption>Hints show a safe move</figcaption></figure>
+        <figure><img src="assets/img/shots/daily.webp" alt="Daily Challenge calendar with solved days ticked" width="432" height="936" loading="lazy"><figcaption>A puzzle every day</figcaption></figure>
+        <figure><img src="assets/img/shots/home.webp" alt="Home screen with the level 42 play button" width="432" height="936" loading="lazy"><figcaption>Pick up where you left off</figcaption></figure>
+        <figure><img src="assets/img/shots/themes.webp" alt="Board themes: Zen Garden, Ocean, Forest and Sunset" width="432" height="936" loading="lazy"><figcaption>Board themes</figcaption></figure>
+        <figure><img src="assets/img/shots/dark.webp" alt="A board in dark mode" width="432" height="936" loading="lazy"><figcaption>Dark mode</figcaption></figure>
+        <figure><img src="assets/img/shots/stars.webp" alt="Level select showing stars for every solved level" width="432" height="936" loading="lazy"><figcaption>Earn 3 stars</figcaption></figure>
+        <figure><img src="assets/img/shots/win.webp" alt="Level complete screen with three stars and a coin reward" width="432" height="936" loading="lazy"><figcaption>Every win pays</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <h2 class="section-title">Questions</h2>
+      <div class="faq">
+        <details><summary>Is Arrow Escape free?</summary><p>Yes. The game is free and shows ads. Optional videos can give you an extra heart or a hint, and you can always earn hints and hearts with coins instead.</p></details>
+        <details><summary>Do I need an internet connection?</summary><p>No. Every level and the daily puzzles play offline. Ads need a connection, so rewarded videos are only available when you are online.</p></details>
+        <details><summary>Do I need an account?</summary><p>No. There is no sign-up. Your progress is saved on your phone.</p></details>
+        <details><summary>What data does the app collect?</summary><p>Your progress stays on your device. Anonymous usage and crash data help us improve the game, and you can turn that off in Settings. Ads are served by Google AdMob. The full details are in our <a href="privacy-policy.html">Privacy Policy</a>.</p></details>
+        <details><summary>Which devices are supported?</summary><p>Android phones running Android 7.0 or newer. An iPhone version is planned.</p></details>
+        <details><summary>How do I contact you?</summary><p>Email <a href="mailto:support@yaro.live">support@yaro.live</a>. We read every message.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="band">
+        <h2>Ready to clear the board?</h2>
+        <p>300 levels and a new puzzle every day, free on Google Play.</p>
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.yaro.arrowescape">Get it on Google Play</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; 2026 Yaro Technology</span>
+    <nav aria-label="Footer">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-use.html">Terms of Use</a>
+      <a href="mailto:support@yaro.live">Contact</a>
+      <a href="https://play.google.com/store/apps/dev?id=5917357268816471493">More apps</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="assets/js/demo.js" defer></script>
+</body>
+</html>
